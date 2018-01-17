@@ -26,12 +26,7 @@ Note:
 6. Other trends
 
 Note:
-- Layout: combo of HTML & CSS to deliver UIs
-- Res/Aspect: How to deal with multi-platform delivery
-- Pre-processors and other ideas to solve perceived CSS problems
-- Abstractions - can we hide from HTML/CSS like JQuery/React etc let us hide from DOM?
-- Web Components - look at the future & similarities with React etc
-- Other trends - things not covered but which relate in
+
 
 ## Summary
 
