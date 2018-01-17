@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Positioning!</title>
+		<link rel="stylesheet" href="css/reset.css" type="text/css" media="screen" charset="utf-8">
+
+<style>
+html, body {
+	height: 100%;
+	padding-top: 20px;
+	padding-left: 200px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+}
+
+h1 {
+	font-size: 1.6em;
+	line-height: 2em;
+}
+
+h2 {
+	font-size: 1.2em;
+	line-height: 1.8em;
+	margin-top: 30px;
+}
+
+.container {
+	width: 500px;
+	height: 500px;
+	border: 1px solid red;
+}
+
+.block {
+	width: 100px;
+	height: 100px;
+	background-color: yellow;
+	border: 1px solid black;
+}
+
+.static {
+	background-color: yellow;
+	width: 100px;
+	height: 100px;
+}
+
+.relative {
+	position: relative;
+}
+
+.absolute {
+	position: absolute;
+}
+</style>
+	</head>
+	<body>
+
+		<h1>Positioning</h1>
+
+		<h2>Static (default)</h2>
+		<div class="container">
+			<div class="block" style="left: 100px;">static (left)</div>
+			<div class="block" style="right: 100px;">static (right)</div>
+			<div class="block" style="top: 100px;">static (top)</div>
+			<div class="block" style="bottom: 100px;">static (bottom)</div>
+		</div>
+
+		<!-- <h2>Relative</h2> -->
+		<!-- <div class="container"> -->
+		<!--   <div class="block relative" style="left: 100px;">relative (left)</div> -->
+		<!--   <div class="block relative" style="right: 100px;">relative (right)</div> -->
+		<!--   <div class="block relative" style="top: 100px;">relative (top)</div> -->
+		<!--   <div class="block relative" style="bottom: 100px;">relative (bottom)</div> -->
+		<!-- </div> -->
+
+		<!-- <h2>Absolute</h2> -->
+		<!-- <div class="container"> -->
+		<!--   <div class="block absolute" style="left: 100px;">absolute (left)</div> -->
+		<!--   <div class="block absolute" style="right: 100px;">absolute (right)</div> -->
+		<!--   <div class="block absolute" style="top: 100px;">absolute (top)</div> -->
+		<!--   <div class="block absolute" style="bottom: 100px;">absolute (bottom)</div> -->
+		<!-- </div> -->
+
+		<!-- <h2>Absolute inside Relative</h2> -->
+		<!-- <div class="container relative"> -->
+		<!--   <div class="block absolute" style="left: 100px;">absolute (left)</div> -->
+		<!--   <div class="block absolute" style="right: 100px;">absolute (right)</div> -->
+		<!--   <div class="block absolute" style="top: 100px;">absolute (top)</div> -->
+		<!--   <div class="block absolute" style="bottom: 100px;">absolute (bottom)</div> -->
+		<!-- </div> -->
+	</body>
+</html>
