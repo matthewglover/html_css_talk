@@ -134,9 +134,13 @@ http://cssdeck.com/labs
 
 Note:
 - Solves two columns
-- But don't set height on container
+- But doesn't set height on container
+- Need to set container height explicitly
+- Doesn't work well for dynamic content / text resizing
 
+---
 
+## 1.4 Layout - Floats
 
 
 
