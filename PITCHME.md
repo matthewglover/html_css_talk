@@ -35,27 +35,130 @@ Note:
 
 ---
 
-## Summary
+# 1. Layout
 
+Note:
+- Combo of HTML and CSS to create layouts
+- Look back at how layout has been addressed over the last 20 years
+- Whats changed but also whats stayed the same
+
+---
+
+## 1.1 Layout - The Beginning
+
+- Rise of design
+- Influence of print and CD Rom design
+- Browser wars
+
+Note:
+- People come on line - cost / permanent connections
+- Establishing brands
+- Web design emerges: layout, images, interactivity
+- HTML not designed for purpose so people got creative
+
+---
+
+## 1.2 Layout - Tables
+
+```html
+<table cellspacing="0" cellpadding="0" border="0">
+<tr>
+	<td colspan="2" bgcolor="#FF0000">Header</td>
+</tr>
+<tr>
+	<td rowspan="2">Nav Bar</td>
+	<td>Main content</td>
+</tr>
+<tr>
+	<td>Footer</td>
+</tr>
+</table>
+```
+
+Note:
+- Tables to set up complex layouts
+- Nested tables for individual elements
+- Lots of noise (hard to see content)
+- Add comments to delineate sections
+- cellspacing / padding / bgcolor
+
+---
+
+## 1.2 Layout - Tables
+
+Pros:
+- Worked
+- Cross-browser consistency
+
+Cons:
+- mixing structure and style
+- lot of noise
+- poor for accessiblity
+- search engines didn't like them
+- often combined with a lot of images
+
+Note:
+- Rise of Google and web optimisation saw move away from tables
+- Plus better CSS support
+
+---
+
+## 1.3 Layout - Positioning
+
+- static (default)
+- relative
+- absolute
+- relative + absolute
+
+Note:
+- static: element is not positioned and occurs where it normally would in the document
+- relative: move the element relative to where it would normally occur (BUT still occupies space originally occupied before l/r/t/b)
+- absolute: element is removed from the document and placed exactly where you tell it to go
+- relative + absolute: position nested elements absolutely within container
+(http://www.barelyfitz.com/screencast/html-training/css/positioning/)
+
+---
+
+## 1.3 Layout - Positioning: absolute + relative
+
+http://cssdeck.com/labs/wqrad3vu
+
+Note:
+Require relative on parent to contain absolute children
+
+---
+
+## 1.3 Layout - Positioning: 2 columns
+
+http://cssdeck.com/labs
+
+Note:
+- Solves two columns
+- But don't set height on container
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------
 1. How it all started - Tables
 2. CSS for Layout - Key developments
 3. The Rise of Mobile - Media Queries
 4. Fixing CSS - Pre-processors
 5. Web Components - the death of the "Page"
 
-
-Note:
-- How it all started for me (before this web was v basic)
-- Addressing challenges
-- Missing: JavaScript, the rise and fall of Flash
-
----
-
-## In the beginning
-
-- People get on line
-- Making things look good - the rise of design
-- Browser (in)compatibility
 
 
 Note:
