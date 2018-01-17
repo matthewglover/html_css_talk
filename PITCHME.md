@@ -3,6 +3,36 @@
 
 ---
 
+## Introduction
+
+- UI layer for majority of applications we build and use
+- Often an afterthought both for developers and designers
+- Bad implementation can have real impact on User Experience
+
+Note:
+- Not "real programming"
+- Historical context needed
+	- old code bases
+	- backward compatibility requirements
+---
+
+## Topics
+
+1. Layout
+2. Resoltion and Aspect Ratios
+3. Problems with CSS
+4. Abstracting away HTML and CSS
+5. Web Components
+6. Other trends
+
+Note:
+1. Layout: combo of HTML & CSS to deliver UIs
+2. Res/Aspect: How to deal with multi-platform delivery
+3. Pre-processors and other ideas to solve perceived CSS problems
+4. Abstractions - can we hide from HTML/CSS like JQuery/React etc let us hide from DOM?
+5. Web Components - look at the future & similarities with React etc
+6. Other trends - things not covered but which relate in
+
 ## Summary
 
 1. How it all started - Tables
