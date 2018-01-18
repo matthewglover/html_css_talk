@@ -185,12 +185,13 @@ Note:
 - Modern layout
 - First thing since tables to deal with vertical alignment
 
+---
 
 ### 1.5 Layout - Flexbox
 
 ```css
 
-.container {
+.flex-container {
 	display: flex;
 	flex-direction: row | row-reverse | column | column-reverse;
 	flex-wrap: nowrap | wrap | wrap-reverse;
@@ -204,7 +205,65 @@ Note:
 - justify-content -> primary axis
 - align-items -> secondary axis
 
+---
 
+### 1.5 Layout - Flexbox
+
+```css
+
+.flex-item {
+	order: integer (default 0);
+	align-self: auto | flex-start | flex-end | center | baseline | stretch;
+	flex-grow: integer;
+	flex-basis: length | auto;
+}
+```
+
+Note:
+- justify-content -> primary axis
+- align-items -> secondary axis
+
+---
+
+### 1.6 Layout - Grid
+
+- Reasonably new feature, but good browser support
+- Two dimensions
+- Similarities to Flexbox
+
+---
+
+### 1.6 Layout - Grid
+
+```css
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 2fr; 
+	grid-column-gap: length;
+	grid-auto-rows: 100px / minmax(100px, auto)
+	justify-items: start | end | center | stretch;
+}
+```
+
+---
+
+### 1.6 Layout - Grid
+
+```css
+.grid-item {
+	align-items: start | end | center | stretch;
+	align-self: start | end | center | stretch;
+}
+```
+
+---
+
+### 1.6 Layout - Grid
+
+http://cssdeck.com/labs/cwjdjnaa
+
+
+---
 
 
 
