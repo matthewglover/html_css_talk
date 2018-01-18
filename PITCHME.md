@@ -58,7 +58,7 @@ Note:
 
 ---
 
-## 1.2 Layout - Tables
+###### 1.2 Tables
 
 ```html
 <table cellspacing="0" cellpadding="0" border="0">
