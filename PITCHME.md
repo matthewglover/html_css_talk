@@ -192,7 +192,13 @@ Note:
 
 ---
 
-###### 1.6 Layout - Grid
+###### 1.5 Flexbox
+
+http://cssdeck.com/labs/m7t8qby0
+
+---
+
+###### 1.6 Grid
 
 ```css
 .grid {
