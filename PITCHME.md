@@ -44,8 +44,7 @@ Note:
 
 ---
 
-### 1.1 Layout
-**The Beginning**
+###### 1.1 The beginnings
 
 - Building brands
 - Rise of design
