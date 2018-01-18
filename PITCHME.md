@@ -184,6 +184,7 @@ Add clearfix to div-1
 Note:
 - Modern layout
 - First thing since tables to deal with vertical alignment
+- Fixes vertical alignment
 
 ---
 
@@ -291,12 +292,13 @@ https://css-tricks.com/confused-rem-em/
 
 ---
 
-# 2.2. - Media Queries
+## 2.2. - Media Queries
 
 ```css
 @media [all | screen | projector | print] and (max-width: 500px) , (max-height: 200px) {
 	/* css */
 }
+```
 
 Note:
 and - either
@@ -305,62 +307,132 @@ https://css-tricks.com/css-media-queries/
 
 ---
 
-# 2.2. - Media Queries
+## 2.2. - Media Queries
 
 - use sparingly
 - rely on relative sizing as much as possible
 - media queries = global scope
+- focus on up-front html/css structure
+- split "layout" from "components"
 
 ---
 
-
---------------------------------------------------------
-1. How it all started - Tables
-2. CSS for Layout - Key developments
-3. The Rise of Mobile - Media Queries
-4. Fixing CSS - Pre-processors
-5. Web Components - the death of the "Page"
-
-
+# 3.0 - The Problem with CSS?
 
 Note:
-- Move from simple text files with basic formatting and links > Selling things
-- Impact of print design
-- Images for logos, rollover buttons
-- Making things work - hacker mentality
-- No dev tools, no console, no Google, MDN, StackOverflow, CSS Tricks or W3Schools (WebMonkey, ExpertsExchange)
+- deficiencies in CSS
+- pre-processors
+- React etc - JS in CSS
 
 ---
 
-## Tables for layout
+## 3.1 - SASS etc
 
-```html
-<table cellspacing="0" cellpadding="0" border="0">
-<tr>
-	<td colspan="2" bgcolor="#FF0000">Header</td>
-</tr>
-<tr>
-	<td rowspan="2">Nav Bar</td>
-	<td>Main content</td>
-</tr>
-<tr>
-	<td>Footer</td>
-</tr>
-</table>
-```
+- LESS, Stylus, (PostCSS)
+- Designed to address perceived deficiencies
+
+---
+
+# 3.1 - SASS etc
+
+- Variables
+- @import: single file (CSS imports equal multiple HTTP Requests)
+- colour functions: lighten, darken, rgba
+- mixins: remove duplication
+- extend: apply styles from one css class to another (e.g. base button class)
+- nested css syntax
+
+---
+
+## 3.1 - SASS etc (downsides)
+
+- Pre-compile stage
+- Non-optimised compilation
+- Nesting
+	- favour shallow hierarchies
+	- use direct child: `.parent > .child`
+	- use * for grandchild: `.parent * > .grandchild`
 
 Note:
-- Tables to set up complex layouts
-- Nested tables for individual elements
-- Lots of noise (hard to see content)
-- Add comments to delineate sections
+child/grandchild - http://cssdeck.com/labs/iie5iw0t
 
 ---
 
-## Problems with Tables
+## 3.2 - Post-CSS
 
-- Noise: more markup than content
-- Mixing style
+- simple modular transforms
+- autoprefixer
+- css-next (variables, functions etc)
 
-> HTML (the Hypertext Markup Language) and CSS (Cascading Style Sheets) are two of the core technologies for building Web pages. HTML provides the structure of the page, CSS the (visual and aural) layout, for a variety of devices.
-(W3.org)
+Note:
+- Misuse: just like SASS but more dependencies to manage
+- Use: enable specific, minimal transformations
+
+---
+
+## 3.3 - Immutable CSS
+
+- Principle similar to immutable objects
+- Simplicity
+- ImmutableCSS enforcement via npm module - works with PostCSS
+
+Note:
+- https://csswizardry.com/2015/03/immutable-css/
+- https://github.com/johnotander/immutable-css
+- More build tooling
+
+---
+
+## 3.4 - CSS in JS
+
+- Popularised by React
+- Style objects located with components
+- Render as inline-styles
+
+Note:
+- downsides: duplication, lose css-only features (pseudo-classes)
+
+---
+
+## 3.5 - JSS / Aphrodite / Styled components
+
+- Similar to CSS in JS
+- Written in JS but compiles to CSS
+
+Note:
+- get css selectors etc
+- no setting at runtime (still need to use style attribs to override
+- complexity: no "winning strategy"
+
+---
+
+## 3.6 - Problems with CSS: Summary
+
+- Architecture vs code solutions
+- CSS gaining new features: variables, functions etc
+- HTTP 2 - more efficient multiple files
+- Don't override tags unless want global resets
+- Don't over-specifiy (keep shallow cascade)
+- Living style guides
+
+---
+
+# 4. Abstractions
+
+- Bootstrap / Material UI
+
+Note:
+PROS:
+- abstract away complexity
+- language of objects and components
+- themes
+
+CONS:
+- everything looks the same
+- heavyweight (JQuery)
+- more customised = less benefit
+
+---
+
+# 5. Web Components
+
