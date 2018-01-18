@@ -293,8 +293,25 @@ https://css-tricks.com/confused-rem-em/
 
 # 2.2. - Media Queries
 
+```css
+@media [all | screen | projector | print] and (max-width: 500px) , (max-height: 200px) {
+	/* css */
+}
 
+Note:
+and - either
+, - or
+https://css-tricks.com/css-media-queries/
 
+---
+
+# 2.2. - Media Queries
+
+- use sparingly
+- rely on relative sizing as much as possible
+- media queries = global scope
+
+---
 
 
 --------------------------------------------------------
