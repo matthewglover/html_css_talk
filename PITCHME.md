@@ -3,7 +3,7 @@
 
 ---
 
-**HTML and CSS**
+### HTML and CSS
 
 - UI layer for Web and more
 - Often an afterthought
