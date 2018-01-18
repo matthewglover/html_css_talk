@@ -130,7 +130,7 @@ Require relative on parent to contain absolute children
 
 ## 1.3 Layout - Positioning: 2 columns
 
-http://cssdeck.com/labs
+http://cssdeck.com/labs/ixvjoa8y
 
 Note:
 - Solves two columns
@@ -142,12 +142,67 @@ Note:
 
 ## 1.4 Layout - Floats
 
+- variable height columns
+- "float" an element to push it as far as possible to the right or to the left, and allow text to wrap around it
+
+Note:
+designed for images
+
+---
+
+## 1.4 Layout - Floats
+
+http://cssdeck.com/labs/nvdqnon3
+
+Note:
+clear: both -> push down rest of content
+
+---
+
+## 1.4 Layout - Clear Fix
+
+- Floats don't affect height of container
+- leads to "collapsed" layouts
+- Need clearfix hack
+
+---
+
+## 1.4 Layout - Clear Fix
+
+http://cssdeck.com/labs/axzgb8bj
+
+Note:
+Add clearfix to div-1
+
+---
+
+### 1.5 Layout - Flexbox
+
+> way to lay out, align and distribute space among items in a container, even when their size is unknown and/or dynamic
+- CSS Tricks https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+Note:
+- Modern layout
+- First thing since tables to deal with vertical alignment
 
 
+### 1.5 Layout - Flexbox
 
+```css
 
+.container {
+	display: flex;
+	flex-direction: row | row-reverse | column | column-reverse;
+	flex-wrap: nowrap | wrap | wrap-reverse;
+	flex-flow: <flex-direction> <flex-wrap>;
+	justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;
+	align-items: flex-start | flex-end | center | space-between | space-around | space-evenly;
+}
+```
 
-
+Note:
+- justify-content -> primary axis
+- align-items -> secondary axis
 
 
 
