@@ -75,7 +75,7 @@ Note:
 </table>
 ```
 
-Notes:
+Note:
 
 Pros:
 - Worked
@@ -93,7 +93,7 @@ Cons:
 
 ---
 
-## 1.3 Layout - Positioning
+###### 1.3 Positioning
 
 - static (default)
 - relative
@@ -109,7 +109,7 @@ Note:
 
 ---
 
-## 1.3 Layout - Positioning: absolute + relative
+###### 1.3 Absolute + relative
 
 http://cssdeck.com/labs/wqrad3vu
 
@@ -118,7 +118,7 @@ Require relative on parent to contain absolute children
 
 ---
 
-## 1.3 Layout - Positioning: 2 columns
+###### 1.3 Two columns
 
 http://cssdeck.com/labs/ixvjoa8y
 
@@ -130,7 +130,7 @@ Note:
 
 ---
 
-## 1.4 Layout - Floats
+###### 1.4 Floats
 
 http://cssdeck.com/labs/nvdqnon3
 
@@ -142,7 +142,7 @@ clear: both -> push down rest of content
 
 ---
 
-## 1.4 Layout - Clear Fix
+###### 1.4 Clear Fix
 
 http://cssdeck.com/labs/axzgb8bj
 
@@ -153,18 +153,17 @@ Note:
 
 ---
 
-### 1.5 Layout - Flexbox
+###### 1.5 Flexbox
 
 > way to lay out, align and distribute space among items in a container, even when their size is unknown and/or dynamic
 
 Note:
 - Modern layout
-- First thing since tables to deal with vertical alignment
-- Fixes vertical alignment
+- Vertical alignment
 
 ---
 
-### 1.5 Layout - Flexbox
+###### 1.5 Flexbox
 
 ```css
 
@@ -193,7 +192,7 @@ Note:
 
 ---
 
-### 1.6 Layout - Grid
+###### 1.6 Layout - Grid
 
 ```css
 .grid {
@@ -217,17 +216,17 @@ Note:
 
 ---
 
-### 1.6 Layout - Grid
+###### 1.6 Layout - Grid
 
 http://cssdeck.com/labs/cwjdjnaa
 
 ---
 
-## 2. Resolution and Aspect Ratio
+### 2. Resolution and Aspect Ratio
 
 ---
 
-## 2.1 - Units
+###### 2.1 - Units
 
 - Fixed: px
 - Relative: %, Em, Rem
@@ -241,7 +240,7 @@ Note:
 
 ---
 
-## 2.2. - Media Queries
+###### 2.2. - Media Queries
 
 ```css
 @media [all | screen | projector | print] and (max-width: 500px) , (max-height: 200px) {
@@ -261,7 +260,7 @@ https://css-tricks.com/css-media-queries/
 
 ---
 
-# 3.0 - The Problem with CSS?
+### 3 - The Problem with CSS
 
 Note:
 - deficiencies in CSS
@@ -270,7 +269,7 @@ Note:
 
 ---
 
-# 3.1 - SASS
+###### 3.1 - SASS
 
 - Variables
 - @import: single file (CSS imports equal multiple HTTP Requests)
@@ -285,7 +284,7 @@ Note:
 
 ---
 
-## 3.1 - SASS vs Selectors
+###### 3.1 - SASS vs Selectors
 
 http://cssdeck.com/labs/iie5iw0t
 
@@ -300,7 +299,7 @@ Note:
 
 ---
 
-## 3.2 - Post-CSS
+###### 3.2 - PostCSS
 
 - modular transforms
 - autoprefixer, inline imports
@@ -312,7 +311,7 @@ Note:
 
 ---
 
-## 3.3 - Immutable CSS
+###### 3.3 - Immutable CSS
 
 - Analagous to immutable objects
 - Simplicity
@@ -324,7 +323,7 @@ Note:
 
 ---
 
-## 3.4 - CSS in JS
+###### 3.4 - CSS in JS
 
 - Popularised by React
 - Style isolation
@@ -337,10 +336,11 @@ Note:
 
 ---
 
-## 3.5 - JSS / Aphrodite / Styled components
+###### 3.5 - JSS
 
 - Similar to CSS in JS
 - JS but compiles to CSS
+- Aphrodite, Styled Components...
 
 Note:
 - get css selectors etc
@@ -349,7 +349,7 @@ Note:
 
 ---
 
-## 3.6 - Problems with CSS: Summary
+###### 3.6 - Overview
 
 - Architecture vs code solutions - shallow cascade
 - CSS gaining new features: variables, functions etc
@@ -363,7 +363,7 @@ Note:
 
 ---
 
-# 4. Components
+### 4. Components
 
 - React, Angular, Vue
 - Web Components - Shadow DOM
@@ -376,7 +376,7 @@ Note:
 
 ---
 
-# 5. Abstractions
+### 5. Abstractions
 
 - Bootstrap / Material UI
 
@@ -391,6 +391,13 @@ CONS:
 - heavyweight (JQuery)
 - more customised = less benefit
 
+---
 
+### Final thoughts
 
+Note:
+- Making do with whats available
+- Appropriate tooling on way
+- Obligation to learn
+- Obligation to try and use the new tools - improve the language
 
