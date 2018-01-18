@@ -16,10 +16,10 @@ Note:
 	- backward compatibility requirements
 ---
 
-## Topics
+### Outline
 
 1. Layout
-2. Resoltion and Aspect Ratios
+2. Multiple devices (resolution and aspect ratio)
 3. Problems with CSS
 4. Web Components
 5. Abstractions
@@ -35,7 +35,7 @@ Note:
 
 ---
 
-# 1. Layout
+### 1. Layout
 
 Note:
 - Combo of HTML and CSS to create layouts
