@@ -436,3 +436,12 @@ CONS:
 
 # 5. Web Components
 
+- Shadow DOM
+
+Note:
+- Similar principles to React, Angular, Vue
+- Custom tags, which hide complex functionality
+- Objects/functions - take only data they need
+- Protected from page-level js/dom/css
+
+
