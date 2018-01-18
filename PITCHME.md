@@ -1,13 +1,13 @@
-### HTML and CSS
-#### A Brief History
+## HTML and CSS
+### Building Web UIs 
 
 ---
 
 ## Introduction
 
-- UI layer for majority of applications we build and use
-- Often an afterthought both for developers and designers
-- Bad implementation can have real impact on User Experience
+- UI layer for Web and more
+- Often an afterthought
+- Impact on User Experience
 
 Note:
 - Not "real programming"
@@ -21,16 +21,16 @@ Note:
 1. Layout
 2. Resoltion and Aspect Ratios
 3. Problems with CSS
-4. Abstracting away HTML and CSS
-5. Web Components
-6. Other trends
+4. Web Components
+5. Abstractions
 
 Note:
 - Layout: combo of HTML & CSS to deliver UIs
 - Res/Aspect: How to deal with multi-platform delivery
 - Pre-processors and other ideas to solve perceived CSS problems
-- Abstractions - can we hide from HTML/CSS like JQuery/React etc let us hide from DOM?
 - Web Components - look at the future & similarities with React etc
+- Abstractions - can we hide from HTML/CSS like JQuery/React etc let us hide from DOM?
+
 - Other trends - things not covered but which relate in
 
 ---
@@ -46,8 +46,8 @@ Note:
 
 ## 1.1 Layout - The Beginning
 
+- Building brands
 - Rise of design
-- Influence of print and CD Rom design
 - Browser wars
 
 Note:
@@ -75,16 +75,7 @@ Note:
 </table>
 ```
 
-Note:
-- Tables to set up complex layouts
-- Nested tables for individual elements
-- Lots of noise (hard to see content)
-- Add comments to delineate sections
-- cellspacing / padding / bgcolor
-
----
-
-## 1.2 Layout - Tables
+Notes:
 
 Pros:
 - Worked
@@ -97,7 +88,6 @@ Cons:
 - search engines didn't like them
 - often combined with a lot of images
 
-Note:
 - Rise of Google and web optimisation saw move away from tables
 - Plus better CSS support
 
@@ -142,28 +132,13 @@ Note:
 
 ## 1.4 Layout - Floats
 
-- variable height columns
-- "float" an element to push it as far as possible to the right or to the left, and allow text to wrap around it
-
-Note:
-designed for images
-
----
-
-## 1.4 Layout - Floats
-
 http://cssdeck.com/labs/nvdqnon3
 
 Note:
+- variable height columns
+- "float" an element to push it as far as possible to the right or to the left, and allow text to wrap around it
+- designed for images
 clear: both -> push down rest of content
-
----
-
-## 1.4 Layout - Clear Fix
-
-- Floats don't affect height of container
-- leads to "collapsed" layouts
-- Need clearfix hack
 
 ---
 
@@ -172,14 +147,15 @@ clear: both -> push down rest of content
 http://cssdeck.com/labs/axzgb8bj
 
 Note:
-Add clearfix to div-1
+- Floats don't affect height of container
+- leads to "collapsed" layouts
+- Need clearfix hack
 
 ---
 
 ### 1.5 Layout - Flexbox
 
 > way to lay out, align and distribute space among items in a container, even when their size is unknown and/or dynamic
-- CSS Tricks https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 Note:
 - Modern layout
@@ -200,17 +176,6 @@ Note:
 	justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;
 	align-items: flex-start | flex-end | center | space-between | space-around | space-evenly;
 }
-```
-
-Note:
-- justify-content -> primary axis
-- align-items -> secondary axis
-
----
-
-### 1.5 Layout - Flexbox
-
-```css
 
 .flex-item {
 	order: integer (default 0);
@@ -223,14 +188,8 @@ Note:
 Note:
 - justify-content -> primary axis
 - align-items -> secondary axis
-
----
-
-### 1.6 Layout - Grid
-
-- Reasonably new feature, but good browser support
-- Two dimensions
-- Similarities to Flexbox
+- justify-content -> primary axis
+- align-items -> secondary axis
 
 ---
 
@@ -244,18 +203,17 @@ Note:
 	grid-auto-rows: 100px / minmax(100px, auto)
 	justify-items: start | end | center | stretch;
 }
-```
 
----
-
-### 1.6 Layout - Grid
-
-```css
 .grid-item {
 	align-items: start | end | center | stretch;
 	align-self: start | end | center | stretch;
 }
 ```
+
+Note:
+- Reasonably new feature, but good browser support
+- Two dimensions
+- Similarities to Flexbox
 
 ---
 
@@ -263,29 +221,20 @@ Note:
 
 http://cssdeck.com/labs/cwjdjnaa
 
-
 ---
 
-## 2 Resolution and Aspect Ratio
+## 2. Resolution and Aspect Ratio
 
 ---
 
 ## 2.1 - Units
 
 - Fixed: px
-- Relative: %, Em, Eem
-
-## 2.1 - Units
-
-> While em is relative to the font-size of its direct or nearest parent, rem is only relative to the html (root) font-size.
+- Relative: %, Em, Rem
 
 Note:
-https://css-tricks.com/confused-rem-em/
-
----
-
-## 2.1 - Units
-
+- While em is relative to the font-size of its direct or nearest parent, rem is only relative to the html (root) font-size.
+- https://css-tricks.com/confused-rem-em/
 - Favour relative units to fixed
 - Allows user to resize app whilst maintaining sizing relationships
 - Minimises changes for different devices
@@ -304,11 +253,6 @@ Note:
 and - either
 , - or
 https://css-tricks.com/css-media-queries/
-
----
-
-## 2.2. - Media Queries
-
 - use sparingly
 - rely on relative sizing as much as possible
 - media queries = global scope
@@ -326,14 +270,7 @@ Note:
 
 ---
 
-## 3.1 - SASS etc
-
-- LESS, Stylus, (PostCSS)
-- Designed to address perceived deficiencies
-
----
-
-# 3.1 - SASS etc
+# 3.1 - SASS
 
 - Variables
 - @import: single file (CSS imports equal multiple HTTP Requests)
@@ -342,26 +279,31 @@ Note:
 - extend: apply styles from one css class to another (e.g. base button class)
 - nested css syntax
 
+Note:
+- LESS, Stylus, (PostCSS)
+- Designed to address perceived deficiencies
+
 ---
 
-## 3.1 - SASS etc (downsides)
+## 3.1 - SASS vs Selectors
 
+http://cssdeck.com/labs/iie5iw0t
+
+Note:
 - Pre-compile stage
 - Non-optimised compilation
 - Nesting
 	- favour shallow hierarchies
 	- use direct child: `.parent > .child`
 	- use * for grandchild: `.parent * > .grandchild`
-
-Note:
-child/grandchild - http://cssdeck.com/labs/iie5iw0t
+- child/grandchild - http://cssdeck.com/labs/iie5iw0t
 
 ---
 
 ## 3.2 - Post-CSS
 
-- simple modular transforms
-- autoprefixer
+- modular transforms
+- autoprefixer, inline imports
 - css-next (variables, functions etc)
 
 Note:
@@ -372,9 +314,8 @@ Note:
 
 ## 3.3 - Immutable CSS
 
-- Principle similar to immutable objects
+- Analagous to immutable objects
 - Simplicity
-- ImmutableCSS enforcement via npm module - works with PostCSS
 
 Note:
 - https://csswizardry.com/2015/03/immutable-css/
@@ -386,10 +327,12 @@ Note:
 ## 3.4 - CSS in JS
 
 - Popularised by React
+- Style isolation
 - Style objects located with components
 - Render as inline-styles
 
 Note:
+- addresses componentisation
 - downsides: duplication, lose css-only features (pseudo-classes)
 
 ---
@@ -397,7 +340,7 @@ Note:
 ## 3.5 - JSS / Aphrodite / Styled components
 
 - Similar to CSS in JS
-- Written in JS but compiles to CSS
+- JS but compiles to CSS
 
 Note:
 - get css selectors etc
@@ -408,16 +351,32 @@ Note:
 
 ## 3.6 - Problems with CSS: Summary
 
-- Architecture vs code solutions
+- Architecture vs code solutions - shallow cascade
 - CSS gaining new features: variables, functions etc
 - HTTP 2 - more efficient multiple files
+- Shallow cascade
+
+Note:
 - Don't override tags unless want global resets
 - Don't over-specifiy (keep shallow cascade)
 - Living style guides
 
 ---
 
-# 4. Abstractions
+# 4. Components
+
+- React, Angular, Vue
+- Web Components - Shadow DOM
+
+Note:
+- Similar principles to React, Angular, Vue
+- Custom tags, which hide complex functionality
+- Objects/functions - take only data they need
+- Protected from page-level js/dom/css
+
+---
+
+# 5. Abstractions
 
 - Bootstrap / Material UI
 
@@ -432,16 +391,6 @@ CONS:
 - heavyweight (JQuery)
 - more customised = less benefit
 
----
 
-# 5. Web Components
-
-- Shadow DOM
-
-Note:
-- Similar principles to React, Angular, Vue
-- Custom tags, which hide complex functionality
-- Objects/functions - take only data they need
-- Protected from page-level js/dom/css
 
 
