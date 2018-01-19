@@ -205,12 +205,14 @@ http://cssdeck.com/labs/m7t8qby0
 	display: grid;
 	grid-template-columns: 1fr 1fr 2fr; 
 	grid-column-gap: length;
+	grid-row-gap: length;
+	grid-gap: length;
 	grid-auto-rows: 100px / minmax(100px, auto)
 	justify-items: start | end | center | stretch;
+	align-items: start | end | center | stretch;
 }
 
 .grid-item {
-	align-items: start | end | center | stretch;
 	align-self: start | end | center | stretch;
 }
 ```
