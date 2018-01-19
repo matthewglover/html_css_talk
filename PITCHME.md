@@ -6,8 +6,8 @@
 ### HTML and CSS
 
 - UI layer for Web and more
-- Often an afterthought
 - Impact on User Experience
+- Often an afterthought
 
 Note:
 - Not "real programming"
