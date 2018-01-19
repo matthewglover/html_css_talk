@@ -347,10 +347,11 @@ Note:
 
 ###### 3.5 - Overview
 
-- Architecture vs code solutions - shallow cascade
-- CSS gaining new features: variables, functions etc
+- Avoid global styles
+- Keep cascade shallow
+- Use valid CSS (even if not yet supported)
 - HTTP 2 - more efficient multiple files
-- Shallow cascade
+- Protect components from the outside world
 
 Note:
 - Don't override tags unless want global resets
