@@ -317,19 +317,7 @@ Note:
 
 ---
 
-###### 3.3 - Immutable CSS
-
-- Analagous to immutable objects
-- Simplicity
-
-Note:
-- https://csswizardry.com/2015/03/immutable-css/
-- https://github.com/johnotander/immutable-css
-- More build tooling
-
----
-
-###### 3.4 - CSS in JS
+###### 3.3 - CSS in JS
 
 - Popularised by React
 - Style isolation
@@ -342,7 +330,7 @@ Note:
 
 ---
 
-###### 3.5 - JSS
+###### 3.4 - JSS
 
 - Similar to CSS in JS
 - JS but compiles to CSS
@@ -355,7 +343,7 @@ Note:
 
 ---
 
-###### 3.6 - Overview
+###### 3.5 - Overview
 
 - Architecture vs code solutions - shallow cascade
 - CSS gaining new features: variables, functions etc
