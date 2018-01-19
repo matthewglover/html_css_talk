@@ -21,7 +21,7 @@ Note:
 1. Layout
 2. Multiple devices (resolution and aspect ratio)
 3. Problems with CSS
-4. Web Components
+4. Components
 5. Abstractions
 
 Note:
